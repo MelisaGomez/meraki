@@ -1,0 +1,666 @@
+/** fuentes primero*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y header Index*/
+
+.container{
+    background-image: url(../assets/img/Body/backgroundop1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-size: cover;   
+    
+}
+
+header{
+    background-color: #1bb1ee;
+    padding: 5px 5px 5px 10px;
+    height: 50px;   
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+}
+
+.liHeader{
+    display: inline-block;
+    margin: 15px;
+    font-size: 15px;
+}
+
+.ulHeader {
+    margin: 0;
+    width: fit-content;
+    float: inline-end;
+}
+
+.logoNavbar{
+    width: 130px;
+    height: 35px;
+    align-items: center;
+}
+
+
+footer{
+    margin: 20px 0 0 0;
+    background-color: #efd61a;
+    padding: 0;
+    width: 100%;
+    color: black;
+    font-style: bold;
+    display: flex;
+    line-height: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacto{
+    margin-bottom: 5px;
+    padding: 5px 0 5px 5px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.redes-sociales{
+    margin-bottom: 0;
+    padding: 0 0 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+
+/* Index */
+/* Sección Meraki*/
+.fotoIndex{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+.seccion-destacada{
+    display: grid;
+    width: 80%;
+    margin: 10px 10px 10px 90px;
+    padding: 10px 10px 10px 10px;
+    background-color: #eae6dc;
+    opacity: 0.7;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "img-dest img-dest titulo-dest titulo-dest"
+    ;
+    
+    
+}
+
+
+.img-dest{
+    display: grid;
+    grid-area: img-dest;
+    height: 90px;
+    margin-top: 5px;
+    justify-self: start;
+}
+
+.titulo-dest{
+    display: grid;
+    grid-area: titulo-dest;
+    height: 90px;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.parrafo-dest{
+    display: flex;
+    text-align: center;
+}
+
+.firma-dest{
+    display: flex;
+    justify-self: end;
+
+}
+
+/** Nosotros*/
+
+.container-nos{
+    background-color: beige;
+    
+}
+
+.storytelling{
+    text-align: justify;
+    width: 98%;
+    justify-content: center;
+    margin: 20px 20px 0 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.marca-nos{
+    width: 98%;
+    justify-content: center;
+    margin: 20px 20px 0 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.trabajos-nos{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas:
+    "cardNos1 cardNos1 cardNos2 cardNos2 cardNos3 cardNos3"
+    "cardNos1 cardNos1 cardNos2 cardNos2 cardNos3 cardNos3"
+    "cardNos1 cardNos1 cardNos2 cardNos2 cardNos3 cardNos3"
+    "cardNos1 cardNos1 cardNos2 cardNos2 cardNos3 cardNos3"
+    "cardNos4 cardNos4 cardNos5 cardNos5 cardNos6 cardNos6"
+    "cardNos4 cardNos4 cardNos5 cardNos5 cardNos6 cardNos6"
+    "cardNos4 cardNos4 cardNos5 cardNos5 cardNos6 cardNos6"
+    "cardNos4 cardNos4 cardNos5 cardNos5 cardNos6 cardNos6"
+    
+    ;
+}
+
+
+.cardNos1 {
+    display: grid;
+    grid-area: cardNos1;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cardNos2 {
+    display: grid;
+    grid-area: cardNos2;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cardNos3 {
+    display: grid;
+    grid-area: cardNos3;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cardNos4 {
+    display: grid;
+    grid-area: cardNos4;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cardNos5 {
+    display: grid;
+    grid-area: cardNos5;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cardNos6 {
+    display: grid;
+    grid-area: cardNos6;
+    height: 360px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+
+
+/** Galería*/
+
+.container-gal{
+    background-color: beige;
+}
+
+.disGal{
+    width: 95%;
+    position: relative;
+    margin: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.galeria-img{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas:
+    "art-1 art-1 art-2 art-2 art-3 art-3"
+    "art-1 art-1 art-2 art-2 art-3 art-3"
+    "art-1 art-1 art-2 art-2 art-3 art-3"
+    "art-1 art-1 art-2 art-2 art-3 art-3"
+    "art-1 art-1 art-2 art-2 art-3 art-3"
+    "art-4 art-4 art-5 art-5 art-6 art-6"
+    "art-4 art-4 art-5 art-5 art-6 art-6"
+    "art-4 art-4 art-5 art-5 art-6 art-6"
+    "art-4 art-4 art-5 art-5 art-6 art-6"
+    "art-4 art-4 art-5 art-5 art-6 art-6"
+
+    ;
+}
+
+.art-1{
+    display: grid;
+    grid-area: art-1;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+    
+}
+
+.art-2{
+    display: grid;
+    grid-area: art-2;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+    
+}
+
+.art-3{
+    display: grid;
+    grid-area: art-3;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+    
+}
+
+.art-4{
+    display: grid;
+    grid-area: art-4;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+}
+
+.art-5{
+    display: grid;
+    grid-area: art-5;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+}
+
+.art-6{
+    display: grid;
+    grid-area: art-6;
+    height: 360px;
+    margin-top: 30px 0 30px 30px;
+    padding: 20px 0 90px 30px;
+    justify-content: center;
+}
+
+
+
+/** Servicios*/
+
+.background-serv{
+    background-image: url(../assets/img/Body/banana.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: right;  
+}
+
+.cards-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.servicio-dg{
+    text-align: justify;
+    width: 50%;
+    height: 50%;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.servicio-cm{
+    text-align: justify;
+    width: 50%;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.servicio-foto{
+    text-align: justify;
+    width: 50%;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.servicio-ilus{
+    text-align: justify;
+    width: 50%;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.servicio-perso {
+    text-align: justify;
+    width: 50%;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(240, 120, 240);
+    opacity: 0.7;
+}
+
+.video-serv {
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px 0 50px;
+    padding: 20px 20px 20px 5px;
+}
+
+/** Formulario*/
+
+.background-form {
+    background-image: url(../assets/img/Body/backgroundform.jpg);
+    width: 100%;
+    background-repeat: repeat-x;
+    background-attachment: scroll; 
+    
+
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: #efd61a ;
+    opacity: 0.8;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.consultaForm{
+    color: #0c5832;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footerForm{
+    margin: 155px 0 0 0;
+    background-color: #efd61a;
+    padding: 0;
+    width: 100%;
+    color: black;
+    font-style: bold;
+    display: block;
+    line-height: 10px;
+    flex-direction: column;
+}
+
+/** Tablet**/
+@media (max-width: 768px){
+
+    .container-nos{
+        background-color: beige;
+        display: grid;
+        
+    }
+    
+    .storytelling{
+        text-align: justify;
+        width: 90%;
+        display: grid;
+        position: relative;
+        margin: 20px 20px 20px 40px;
+        padding: 20px 20px 20px 40px;
+        background-color: rgb(240, 120, 240);
+        opacity: 0.7;
+        justify-items: center;
+    }
+    
+    .marca-nos{
+        text-align: center;
+        width: 90%;
+        display: grid;
+        position: relative;
+        margin: 20px 20px 20px 40px;
+        padding: 20px 20px 20px 40px;
+        background-color: rgb(240, 120, 240);
+        opacity: 0.7;
+    }
+
+    .trabajos-nos{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "cardNos1 cardNos1 cardNos2 cardNos2"
+        "cardNos1 cardNos1 cardNos2 cardNos2"
+        "cardNos3 cardNos3 cardNos4 cardNos4"
+        "cardNos3 cardNos3 cardNos4 cardNos4"
+        "cardNos5 cardNos5 cardNos6 cardNos6"
+        "cardNos5 cardNos5 cardNos6 cardNos6" 
+        ;
+        
+    }
+
+    .cardNos1 {
+        display: grid;
+        grid-area: cardNos1;
+        height: 360px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .cardNos2 {
+        display: grid;
+        grid-area: cardNos2;
+        height: 360px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .cardNos3 {
+        display: grid;
+        grid-area: cardNos3;
+        height: 360px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .cardNos4 {
+        display: grid;
+        grid-area: cardNos4;
+        height: 360px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .cardNos5 {
+        display: none;
+    }
+    
+    .cardNos6 {
+        display: none;
+    }
+    
+    .seccion-3{
+        background-color: #efd61a;
+        display: grid;
+        align-content: end;
+    
+    }
+
+}
+
+/**mobile**/
+@media (max-width: 576px){
+    
+    .logoNavbar{
+        display: grid;
+        width: 130px;
+        height: 35px;
+        align-items: left;
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    .container-nos{
+        background-color: beige;
+        display: grid;
+        
+    }
+    
+    .storytelling{
+        text-align: justify;
+        width: 90%;
+        display: grid;
+        position: relative;
+        margin: 20px 20px 20px 40px;
+        padding: 20px 20px 20px 40px;
+        background-color: rgb(240, 120, 240);
+        opacity: 0.7;
+        justify-items: center;
+    }
+    
+    .marca-nos{
+        text-align: center;
+        width: 90%;
+        display: grid;
+        position: relative;
+        margin: 20px 20px 20px 40px;
+        padding: 20px 20px 20px 40px;
+        background-color: rgb(240, 120, 240);
+        opacity: 0.7;
+    }
+
+    .trabajos-nos{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        "cardNos1 cardNos1 cardNos2 cardNos2"
+        "cardNos3 cardNos3 cardNos4 cardNos4"
+        "cardNos5 cardNos5 cardNos6 cardNos6"
+        
+        ;
+        
+    }
+
+    .cardNos1 {
+        display: grid;
+        grid-area: cardNos1;
+        height: 360px;
+        margin-top: 30px;
+        align-content: center;
+    }
+    
+    .cardNos2 {
+        display: grid;
+        grid-area: cardNos2;
+        height: 360px;
+        margin-top: 30px;
+        align-content: center;
+    }
+    
+    .cardNos3 {
+        display: grid;
+        grid-area: cardNos3;
+        height: 360px;
+        margin-top: 30px;
+        align-content: center;
+    }
+    
+    .cardNos4 {
+        display: grid;
+        grid-area: cardNos4;
+        height: 360px;
+        margin-top: 30px;
+        align-content: center;
+    }
+    
+    .cardNos5 {
+        display: none; 
+    }
+    
+    .cardNos6 {
+        display: none;
+    }
+    
+    .seccion-3{
+        background-color: #efd61a;
+        display: grid;
+        align-content: end;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
